@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DIDINE AMG — Boutique Sport</title>
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 :root {
   --noir: #050508;
@@ -806,8 +807,8 @@ footer {
 <body>
 
 <!-- CUSTOM CURSOR -->
-<div class="cursor" id="cursor" style="left: 776px; top: 340px;"></div>
-<div class="cursor-ring" id="cursorRing" style="left: 774px; top: 345px;"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
 <!-- TICKER -->
 <div class="ticker-wrap">
@@ -843,8 +844,8 @@ footer {
     </h1>
     <p class="hero-sub">Équipement sport de qualité — Livraison partout en Algérie 🇩🇿</p>
     <div class="hero-btns">
-      <button class="btn-primary" onclick="document.getElementById(&#39;produits&#39;).scrollIntoView({behavior:&#39;smooth&#39;})">VOIR LA COLLECTION →</button>
-      <button class="btn-secondary" onclick="document.getElementById(&#39;categories&#39;).scrollIntoView({behavior:&#39;smooth&#39;})">CATÉGORIES</button>
+      <button class="btn-primary" onclick="document.getElementById('produits').scrollIntoView({behavior:'smooth'})">VOIR LA COLLECTION →</button>
+      <button class="btn-secondary" onclick="document.getElementById('categories').scrollIntoView({behavior:'smooth'})">CATÉGORIES</button>
     </div>
   </div>
   <div class="hero-visual">
@@ -866,10 +867,10 @@ footer {
 
 <!-- STATS -->
 <div class="stats">
-  <div class="stat" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;"><div class="stat-num">500+</div><div class="stat-label">Produits</div></div>
-  <div class="stat" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;"><div class="stat-num">2K+</div><div class="stat-label">Clients satisfaits</div></div>
-  <div class="stat" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;"><div class="stat-num">48H</div><div class="stat-label">Livraison express</div></div>
-  <div class="stat" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;"><div class="stat-num">100%</div><div class="stat-label">Authentique</div></div>
+  <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Produits</div></div>
+  <div class="stat"><div class="stat-num">2K+</div><div class="stat-label">Clients satisfaits</div></div>
+  <div class="stat"><div class="stat-num">48H</div><div class="stat-label">Livraison express</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Authentique</div></div>
 </div>
 
 <!-- CATEGORIES -->
@@ -879,7 +880,7 @@ footer {
     <h2 class="section-title">NOS <span>CATÉGORIES</span></h2>
   </div>
   <div class="categories-grid">
-    <div class="cat-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="cat-card">
       <div class="cat-bg cat-bg-1"></div>
       <div class="cat-icon-big">👕</div>
       <div class="cat-content">
@@ -888,7 +889,7 @@ footer {
       </div>
       <div class="cat-arrow">→</div>
     </div>
-    <div class="cat-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="cat-card">
       <div class="cat-bg cat-bg-2"></div>
       <div class="cat-icon-big">👟</div>
       <div class="cat-content">
@@ -897,7 +898,7 @@ footer {
       </div>
       <div class="cat-arrow">→</div>
     </div>
-    <div class="cat-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="cat-card">
       <div class="cat-bg cat-bg-3"></div>
       <div class="cat-icon-big">🎽</div>
       <div class="cat-content">
@@ -906,7 +907,7 @@ footer {
       </div>
       <div class="cat-arrow">→</div>
     </div>
-    <div class="cat-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="cat-card">
       <div class="cat-bg cat-bg-4"></div>
       <div class="cat-icon-big">🧢</div>
       <div class="cat-content">
@@ -926,18 +927,18 @@ footer {
       <h2 class="section-title">NOS <span>PRODUITS</span></h2>
     </div>
     <div class="filter-tabs">
-      <button class="filter-tab active" onclick="filterProducts(&#39;all&#39;, this)">Tous</button>
-      <button class="filter-tab" onclick="filterProducts(&#39;new&#39;, this)">Nouveaux</button>
-      <button class="filter-tab" onclick="filterProducts(&#39;promo&#39;, this)">Promos</button>
-      <button class="filter-tab" onclick="filterProducts(&#39;top&#39;, this)">Top Vente</button>
+      <button class="filter-tab active" onclick="filterProducts('all', this)">Tous</button>
+      <button class="filter-tab" onclick="filterProducts('new', this)">Nouveaux</button>
+      <button class="filter-tab" onclick="filterProducts('promo', this)">Promos</button>
+      <button class="filter-tab" onclick="filterProducts('top', this)">Top Vente</button>
     </div>
   </div>
   <div class="products-grid" id="productsGrid">
 
-    <div class="product-card" data-tag="new" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="product-card" data-tag="new">
       <div class="product-img">
         <div class="product-img-bg pbg-1"></div>
-        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <img src="https://i.ibb.co/WNgrtYgp/t-shirt-coton-extensible-fitness-slim-beige.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
         <span class="product-badge badge-new">NOUVEAU</span>
       </div>
       <div class="product-info">
@@ -951,15 +952,15 @@ footer {
         </div>
         <div class="product-footer">
           <div class="product-price">2 800 DA</div>
-          <button class="add-cart" onclick="addToCart(&#39;T-Shirt AMG Tech&#39;, &#39;2 800 DA&#39;, &#39;👕&#39;)">+</button>
+          <button class="add-cart" onclick="addToCart('T-Shirt AMG Tech', '2 800 DA', '👕')">+</button>
         </div>
       </div>
     </div>
 
-    <div class="product-card" data-tag="promo" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="product-card" data-tag="promo">
       <div class="product-img">
         <div class="product-img-bg pbg-2"></div>
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;border-radius:0;">
+        <img src="https://i.ibb.co/Ng63zN3S/FAST-R-NITRO-Elite-3-Running-Shoes-Men.avif" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;border-radius:0;">
         <span class="product-badge badge-promo">-40%</span>
       </div>
       <div class="product-info">
@@ -973,15 +974,15 @@ footer {
         </div>
         <div class="product-footer">
           <div class="product-price">7 200 DA <span class="old-price">12 000 DA</span></div>
-          <button class="add-cart" onclick="addToCart(&#39;Runner Elite&#39;, &#39;7 200 DA&#39;, &#39;👟&#39;)">+</button>
+          <button class="add-cart" onclick="addToCart('Runner Elite', '7 200 DA', '👟')">+</button>
         </div>
       </div>
     </div>
 
-    <div class="product-card" data-tag="top" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="product-card" data-tag="top">
       <div class="product-img">
         <div class="product-img-bg pbg-3"></div>
-        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&q=80" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <img src="https://i.ibb.co/SwvcTPfF/psg-jordan-night-edition-special-edition-stadium-shirt-2025-26-champions-of-europe-2026-print-ss5-p.avif" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
         <span class="product-badge badge-top">TOP VENTE</span>
       </div>
       <div class="product-info">
@@ -995,15 +996,15 @@ footer {
         </div>
         <div class="product-footer">
           <div class="product-price">3 500 DA</div>
-          <button class="add-cart" onclick="addToCart(&#39;Maillot Pro 2026&#39;, &#39;3 500 DA&#39;, &#39;🎽&#39;)">+</button>
+          <button class="add-cart" onclick="addToCart('Maillot Pro 2026', '3 500 DA', '🎽')">+</button>
         </div>
       </div>
     </div>
 
-    <div class="product-card" data-tag="new" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="product-card" data-tag="new">
       <div class="product-img">
         <div class="product-img-bg pbg-4"></div>
-        <img src="https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?w=600&q=80" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <img src="https://i.ibb.co/mFNXqhpf/short-noir-sport-noir-s-50-60kg.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
         <span class="product-badge badge-new">NOUVEAU</span>
       </div>
       <div class="product-info">
@@ -1017,15 +1018,15 @@ footer {
         </div>
         <div class="product-footer">
           <div class="product-price">1 900 DA</div>
-          <button class="add-cart" style="background:#333;opacity:0.5;cursor:not-allowed" disabled="">✕</button>
+          <button class="add-cart" style="background:#333;opacity:0.5;cursor:not-allowed" disabled>✕</button>
         </div>
       </div>
     </div>
 
-    <div class="product-card" data-tag="top" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="product-card" data-tag="top">
       <div class="product-img">
         <div class="product-img-bg pbg-1"></div>
-        <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&q=80" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <img src="https://i.ibb.co/N2VzbzSp/casquette-de-sport-respirante-anti-uv-56-60cm-hvatilaw-e37-e10-902106.webp" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
         <span class="product-badge badge-top">TOP VENTE</span>
       </div>
       <div class="product-info">
@@ -1039,15 +1040,15 @@ footer {
         </div>
         <div class="product-footer">
           <div class="product-price">1 200 DA</div>
-          <button class="add-cart" onclick="addToCart(&#39;Casquette AMG&#39;, &#39;1 200 DA&#39;, &#39;🧢&#39;)">+</button>
+          <button class="add-cart" onclick="addToCart('Casquette AMG', '1 200 DA', '🧢')">+</button>
         </div>
       </div>
     </div>
 
-    <div class="product-card" data-tag="promo" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="product-card" data-tag="promo">
       <div class="product-img">
         <div class="product-img-bg pbg-2"></div>
-        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&q=80" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <img src="https://i.ibb.co/gZM07fQd/men-waypoint-white-front.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
         <span class="product-badge badge-promo">-30%</span>
       </div>
       <div class="product-info">
@@ -1061,15 +1062,15 @@ footer {
         </div>
         <div class="product-footer">
           <div class="product-price">5 600 DA <span class="old-price">8 000 DA</span></div>
-          <button class="add-cart" onclick="addToCart(&#39;Veste Training&#39;, &#39;5 600 DA&#39;, &#39;🧥&#39;)">+</button>
+          <button class="add-cart" onclick="addToCart('Veste Training', '5 600 DA', '🧥')">+</button>
         </div>
       </div>
     </div>
 
-    <div class="product-card" data-tag="new" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="product-card" data-tag="new">
       <div class="product-img">
         <div class="product-img-bg pbg-3"></div>
-        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <img src="https://i.ibb.co/cKNMnd57/468abeddf13b4aeebd86c3cc4f94966b.webp" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
         <span class="product-badge badge-new">NOUVEAU</span>
       </div>
       <div class="product-info">
@@ -1083,15 +1084,15 @@ footer {
         </div>
         <div class="product-footer">
           <div class="product-price">4 500 DA</div>
-          <button class="add-cart" onclick="addToCart(&#39;Sac de Sport&#39;, &#39;4 500 DA&#39;, &#39;🎒&#39;)">+</button>
+          <button class="add-cart" onclick="addToCart('Sac de Sport', '4 500 DA', '🎒')">+</button>
         </div>
       </div>
     </div>
 
-    <div class="product-card" data-tag="top" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+    <div class="product-card" data-tag="top">
       <div class="product-img">
         <div class="product-img-bg pbg-4"></div>
-        <img src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=600&q=80" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
+        <img src="https://i.ibb.co/Fq0nQg12/icebreaker-merino-hike-plus-liner-crew-socks-men-black-1-1908315.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;">
         <span class="product-badge badge-top">TOP VENTE</span>
       </div>
       <div class="product-info">
@@ -1105,7 +1106,7 @@ footer {
         </div>
         <div class="product-footer">
           <div class="product-price">800 DA</div>
-          <button class="add-cart" onclick="addToCart(&#39;Chaussettes AMG Pack&#39;, &#39;800 DA&#39;, &#39;🧦&#39;)">+</button>
+          <button class="add-cart" onclick="addToCart('Chaussettes AMG Pack', '800 DA', '🧦')">+</button>
         </div>
       </div>
     </div>
@@ -1320,6 +1321,5 @@ document.querySelectorAll('.product-card, .cat-card, .stat').forEach(el => {
   observer.observe(el);
 });
 </script>
-
-
-</body></html>
+</body>
+</html>
